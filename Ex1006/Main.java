@@ -8,5 +8,6 @@ public class Main {
         double n3 = nota.nextDouble();
         double media = (n1*0.2)+(n2*0.3)+(n3*0.5);
         System.out.format("MEDIA = %.1f\n", media);
+        nota.close();
     }
 }
