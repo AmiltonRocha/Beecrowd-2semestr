@@ -1,13 +1,14 @@
 package Ex1004;
 import java.util.Scanner;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
-       Scanner int1 = new Scanner(System.in);
-       int valor1 = int1.nextInt();
-       Scanner int2 = new Scanner(System.in);
-       int valor2 = int2.nextInt();
-       int PROD = valor1 * valor2;
-       System.out.printf("PROD = %d",PROD);
+    public static void main(String[] args)throws IOException {
+        Scanner inteiros = new Scanner(System.in);
+        int n1 = inteiros.nextInt();
+        int n2 = inteiros.nextInt();
+        int PROD = n1 * n2;
+        System.out.format("PROD = %d\n",PROD);
+
     }
 }
