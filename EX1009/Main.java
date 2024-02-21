@@ -7,9 +7,9 @@ public class Main {
         double salario = planilha.nextDouble();
         double vendas = planilha.nextDouble();
         double TOTAL = salario + (vendas * 0.15);
-        System.out.format("TOTAL = R$ %.2f\n",TOTAL);
+        System.out.format("TOTAL do %s = R$ %.2f\n",nome,TOTAL);
         planilha.close();
-
+        
         
 
 
