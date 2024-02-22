@@ -10,6 +10,9 @@ public class Main {
         double seno = 0;
         double radiano = graus * (3.141592 / 180);
         if (graus <= 360 && graus >= 0 && vezes <= 10000 && vezes >= 1) {
+            if(vezes>50){
+                vezes = 50;
+            }
             for (int i = 0; i < vezes; i++) {
                 if (i % 2 == 0) {
                     seno += (Math.pow(radiano, aux) / calcularFatorial(aux));
@@ -26,7 +29,9 @@ public class Main {
     public static double calcularFatorial(double numero) {
         if (numero == 0 || numero == 1) {
             return 1;
-        } else {
+        }
+        
+        else {
             double fatorial = 1;
             for (int i = 2; i <= numero; i++) {
                 fatorial *= i;
