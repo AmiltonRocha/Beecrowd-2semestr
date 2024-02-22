@@ -12,7 +12,7 @@ public class Main {
         if (graus <= 360 && graus >= 0 && vezes <= 10000 && vezes >= 1) {
             if(vezes>50){
                 vezes = 50;
-            }
+            }          
             for (int i = 0; i < vezes; i++) {
                 if (i % 2 == 0) {
                     seno += (Math.pow(radiano, aux) / calcularFatorial(aux));
